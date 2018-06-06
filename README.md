@@ -69,7 +69,7 @@ username.changes(v => this.setState({ username }));
 #### Example of the Twio object data flow
 
 ```
-const company = Twio('My Company', company => console.log("Company Update:", company));
+const company = Twio('My Company', company => console.log("Company Update:", company.toString()));
 company.set('New Company');
 // the console will show:
 // Company Update: New Company
