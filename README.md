@@ -1,6 +1,6 @@
 # Twio
 
-Twio is a lightweight Javascript project (using ES6) for two way data binding. Twio works with React Components without mixins. Twio is short for Two Way Input Output. Twio performs one and only one task, two way data binding. Twio should be compatible with any system using ES6. In the future we might consider writing a more quirksmode version, however the succintness of ES6 a big plus.
+Twio is a lightweight Javascript project (using ES6) for two way data binding. Twio works with React Components without mixins. Twio is short for Two Way Input Output. Twio performs one and only one task, two way data binding. Twio should be compatible with any system using ES6. In the future we might consider writing a more quirksmode version, however the succintness of ES6 is a big plus.
 
 ## Getting Started
 
@@ -28,35 +28,51 @@ npm i twio
 
 To start using Twio in a component, you can import it using the following:
 
+### Import or Require
+
 ```
 import Twio from 'twio';
-// - or -
+```
+
+or
+
+```
 const Twio = require('twio');
 ```
 
+### Get a Twio object
+
 Twio is a factory function. The factory function can be run to create a new instance of a Twio object.  You optionally provide the initial value as the first parameter. You can optionally provide an update handler as a second parameter. Twio will assign an empty string to values if none is provided.
 
+#### Examples of getting a Twio object
+
 ```
-// no parameters, returns a Twio object instance. 
 const username = Twio();
-
-// optional first parameter provides an initial value
 const email = Twio('initial@value.com');
-
-// optional second parameter provides an update handler, called when changes occur
 const company = Twio('My Company', company => this.setState({company}));
 ```
 
-After running the code above, username will have a new instance of a Twio object. Email will be a Twio object that is initialized with the value `initial@value.com`. You can explicitly set a value using the set method. Changing a value explicitly using set will call the update handler.
+After running the code above, username will have a new instance of a Twio object with an empty string value. Email will be a Twio object that is initialized with the value `initial@value.com`. Company will be initialized with `My Company` and a update handler will be fired every time the DOM changes the value. 
+
+You can also explicitly set a value using the set method. Changing a value explicitly using set will call the update handler.
 
 ```
 username.set('Bob');
 ```
 
-You can add a callback function that will run when the value changes.
+You can add a data update function that will run when the value changes.
 
 ```
 username.changes(v => this.setState({ username }));
+```
+
+#### Example of the Twio object data flow
+
+```
+const company = Twio('My Company', company => console.log("Company Update:", company));
+company.set('New Company');
+// the console will show:
+// Company Update: New Company
 ```
 
 Twio can be used in the render method of your component. An input field can use Twio easily.
@@ -67,7 +83,7 @@ Twio can be used in the render method of your component. An input field can use 
 
 Whenever a change occurs, the changes handler is fired, ensuring that the setState gets called.
 
-## Example
+## Form Example
 
 An example of Twio providing a two way data binding.
 
