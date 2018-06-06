@@ -98,7 +98,7 @@ class SignUp extends Component {
         <input type="text" value={this.state.firstName} onChange={this.state.firstName.onChange} />
         <input type="text" value={this.state.lastName} onChange={this.state.lastName.onChange} />
         <input type="text" value={this.state.email} onChange={this.state.email.onChange} />
-        <input type="text" value={this.state.password} onChange={this.state.password.onChange} />
+        <input type="password" value={this.state.password} onChange={this.state.password.onChange} />
       </form>
     );
   }
