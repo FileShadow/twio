@@ -15,7 +15,7 @@ Twio has no dependencies.
 Install Twio into your ES6+ project using NPM.
 
 ```
-npm i twio
+npm i --save twio
 ```
 
 ## Usage
