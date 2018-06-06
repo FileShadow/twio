@@ -34,10 +34,10 @@ import Twio from 'twio';
 const Twio = require('twio');
 ```
 
-Twio is a factory function. The factory function can be run to create a new instance of a Twio object.  You provide the initial value optionally as the first parameter when calling the factory function. You can optionally provide a update handler as a second parameter.
+Twio is a factory function. The factory function can be run to create a new instance of a Twio object.  You optionally provide the initial value as the first parameter. You can optionally provide an update handler as a second parameter. Twio will assign an empty string to values if none is provided.
 
 ```
-// no parameters, returns a Twio object instance. Twio will assign an empty string to values if none is provided.
+// no parameters, returns a Twio object instance. 
 const username = Twio();
 
 // optional first parameter provides an initial value
@@ -108,3 +108,7 @@ See also the list of [contributors](https://github.com/gregbramwell/twio/contrib
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Attributions
+
+- [FileShadow](https://www.fileshadow.com)
