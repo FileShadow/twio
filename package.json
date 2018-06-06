@@ -1,7 +1,7 @@
 {
   "name": "twio",
   "version": "1.0.0",
-  "description": "Two Way Data Binding for React",
+  "description": "Two Way Data Binding for React. Twio boxes data, providing a simple, fast interface for managing data.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,7 +18,8 @@
     "Node",
     "ES6",
     "ES7",
-    "React"
+    "React",
+    "FileShadow"
   ],
   "author": "Gregory Bramwell",
   "license": "MIT",
