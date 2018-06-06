@@ -10,12 +10,6 @@ Twio is easy to use, and provided under the MIT license. Twio has no dependencie
 
 Twio has no dependencies.
 
-```
-if (Twio === NO_DEPENDENCIES) {
-  return SUCCESS;
-}
-```
-
 ### Installing
 
 Install Twio into your ES6+ project using NPM.

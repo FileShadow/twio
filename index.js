@@ -28,6 +28,8 @@ class TwioClass {
   }
 }
 
-export default function Twio(initial = '', changes = null) {
+function Twio(initial = '', changes = null) {
   return new TwioClass(initial, changes);
 }
+
+module.exports = Twio;
