@@ -63,7 +63,7 @@ username.set('Bob');
 You can add a data update function that will run when the value changes.
 
 ```
-username.changes(v => this.setState({ username }));
+username.changes(username => this.setState({ username }));
 ```
 
 #### Example of the Twio object data flow
