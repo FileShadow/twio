@@ -12,7 +12,7 @@ Twio has no dependencies.
 
 ```
 if (Twio === NO_DEPENDENCIES) {
-	return SUCCESS;
+  return SUCCESS;
 }
 ```
 
@@ -74,24 +74,24 @@ An example of Twio providing a two way data binding.
 ```
 import Twio from "twio";
 class SignUp extends Component {
-	constructor() {
-		this.state = {
-			firstName: Twio().changes(firstName => this.setState({firstName})),
-			lastName: Twio().changes(lastName => this.setState({lastName})),
-			email: Twio().changes(email => this.setState({email})),
-			password: Twio().changes(password => this.setState({password})),
-		};
-	}
-	render() {
-		return (
-			<form>
-				<input type="text" value={this.state.firstName} onChange={this.state.firstName.onChange} />
-				<input type="text" value={this.state.lastName} onChange={this.state.lastName.onChange} />
-				<input type="text" value={this.state.email} onChange={this.state.email.onChange} />
-				<input type="text" value={this.state.password} onChange={this.state.password.onChange} />
-			</form>
-		);
-	}
+  constructor() {
+    this.state = {
+      firstName: Twio().changes(firstName => this.setState({firstName})),
+      lastName: Twio().changes(lastName => this.setState({lastName})),
+      email: Twio().changes(email => this.setState({email})),
+      password: Twio().changes(password => this.setState({password})),
+    };
+  }
+  render() {
+    return (
+      <form>
+        <input type="text" value={this.state.firstName} onChange={this.state.firstName.onChange} />
+        <input type="text" value={this.state.lastName} onChange={this.state.lastName.onChange} />
+        <input type="text" value={this.state.email} onChange={this.state.email.onChange} />
+        <input type="text" value={this.state.password} onChange={this.state.password.onChange} />
+      </form>
+    );
+  }
 }
 ```
 
