@@ -1,6 +1,6 @@
 # Twio
 
-Twio is a lightweight Javascript project (using ES6) for two way data binding. Twio works with React Components without mixins. Twio is short for Two Way Input Output. Twio performs one and only one task, two way data binding. Twio should be compatible with any system using ES6. In the future we might consider writing a more quirksmode version, however the succintness of ES6 is a big plus.
+Twio is a lightweight Javascript project (using ES6) for two way data binding. Twio works with React Components without mixins. Twio is short for Two Way Input Output. Twio performs one and only one task, two way data binding. Twio should be compatible with any system using ES6. In the future we might consider writing a more quirksmode version, however the succinctness of ES6 is a big plus.
 
 ## Getting Started
 
@@ -43,16 +43,16 @@ Twio is a factory function. The factory function will return a new instance of a
 ```
 const username = Twio();
 const email = Twio('initial@value.com');
-const company = Twio('My Company', company => this.setState({company}));
+const name = Twio('John', name => this.setState({name}));
 const phone = Twio(phone => this.setState({phone}));
 ```
 
-After running the code above, username will have a new instance of a Twio object with an empty string value. Email will be a Twio object that is initialized with the value `initial@value.com`. Company will be initialized with `My Company` and an update handler will be fired every time an `onChange` event fires. Phone will be a Twio object that is initialized with an empty string and has an update handler for `onChange` events.
+After running the code above, username will have a new instance of a Twio object with an empty string value. Email will be a Twio object that is initialized with the value **initial@value.com**. Name will be initialized with **John** and an update handler will be fired every time an `onChange` event fires. Phone will be a Twio object that is initialized with an empty string and has an update handler for `onChange` events.
 
 You can also explicitly assign a value using the `.set()` method. Changing a value using `.set()` will also call the update handler.
 
 ```
-username.set('Bob');
+username.set('myuser');
 ```
 
 You can add an update handler to a Twio object by calling `.changes()`. Update handlers should be functions which accept one parameter, the Twio object. Update handlers will fire during `onChange` events, as well as Javascript calls to `.set()`
@@ -64,14 +64,14 @@ username.changes(username => this.setState({ username }));
 #### Example of the Twio object data flow
 
 ```
-const company = Twio( company => console.log(company.toString()) );
-company.set('Data Corp'); // console shows: Data Corp
+const name = Twio( name => console.log(name.toString()) );
+name.set('Billy Bob'); // console shows: Billy Bob
 ```
 
 Twio can be used in the render method of your component. An input field can use Twio easily.
 
 ```
-<input type="text" value={this.state.username} onChange={this.state.username.onChange} />
+<input type="text" value={this.state.name} onChange={this.state.name.onChange} />
 ```
 
 Whenever a change occurs, the update handler is called, which will update the component state using `setState`.
@@ -124,6 +124,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Version Updates
 
-### 1.1.0
+### 1.1.2
 
 * Factory function can accept a update handler as a first parameter.
