@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gregbramwell/twio.git"
+    "url": "git+https://github.com/FileShadow/twio.git"
   },
   "keywords": [
     "Two",
@@ -27,7 +27,7 @@
   "author": "Gregory Bramwell",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gregbramwell/twio/issues"
+    "url": "https://github.com/FileShadow/twio/issues"
   },
-  "homepage": "https://github.com/gregbramwell/twio#readme"
+  "homepage": "https://github.com/FileShadow/twio#readme"
 }

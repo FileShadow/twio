@@ -106,13 +106,13 @@ class SignUp extends Component {
 
 ## Contributing
 
-Contributions are welcome. Please post any feedback to the [Twio project page](https://github.com/gregbramwell/twio).
+Contributions are welcome. Please post any feedback to the [Twio project page](https://github.com/FileShadow/twio).
 
 ## Authors
 
 * **Gregory Bramwell** - *Initial work* - [gregbramwell](https://github.com/gregbramwell)
 
-See also the list of [contributors](https://github.com/gregbramwell/twio/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/FileShadow/twio/contributors) who participated in this project.
 
 ## License
 
