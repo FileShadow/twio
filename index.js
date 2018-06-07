@@ -29,6 +29,10 @@ class TwioClass {
 }
 
 function Twio(initial = '', changes = null) {
+  if (typeof initial === "function" && changes === null) {
+    changes = initial;
+    initial = '';
+  }
   return new TwioClass(initial, changes);
 }
 
