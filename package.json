@@ -1,6 +1,6 @@
 {
   "name": "twio",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Two Way Data Binding for React. Twio boxes data, providing a simple, fast interface for managing data.",
   "main": "index.js",
   "scripts": {
