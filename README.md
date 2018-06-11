@@ -1,3 +1,5 @@
+![npm](https://img.shields.io/npm/dt/twio.svg)
+
 # Twio
 
 Twio is a lightweight Javascript project (using ES6) for two way data binding. Twio works with React Components without mixins. Twio is short for Two Way Input Output. Twio performs one and only one task, two way data binding. Twio should be compatible with any system using ES6. In the future we might consider writing a more quirksmode version, however the succinctness of ES6 is a big plus.
