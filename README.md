@@ -126,6 +126,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Version Updates
 
-### 1.1.2
+### 1.1.3
 
+* Value getter and setter
 * Factory function can accept a update handler as a first parameter.

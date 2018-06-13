@@ -23,6 +23,14 @@ class TwioClass {
     return this;
   }
 
+  get value() {
+    return this.state.value;
+  }
+
+  set value(value) {
+    this.set(value);
+  }
+
   toString() {
     return this.state.value;
   }
